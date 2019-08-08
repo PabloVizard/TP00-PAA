@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+//Funções dos menus
 void MenuPrincipal(){
   printf("PROGRAMA GERADOR DE OBRA DE ARTE:\n");
   printf("=================================\n");
