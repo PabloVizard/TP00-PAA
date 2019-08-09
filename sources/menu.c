@@ -12,9 +12,41 @@ void MenuPrincipal(){
   printf("4 - figuras aleatorias\n");
   printf("5 ou qualquer outro numero – opcao de obra de arte criada pelo aluno\n");
 }
-void MenuEscolha1(){
+void MenuEscolhaFigura(){
   printf("Digite o tipo de figura basica desejada: ");
 }
-void MenuEscolha2(){
+void MenuEscolhaQuantidade(){
   printf("Digite a quantidade de figuras (menor ou igual a zero para aleatorio): ");
+}
+void MenuQuadro(int opcao, int quantidade){
+  printf("Opcao Escolhida: %d\n", opcao);
+  printf("Quantidade Escolhida: %d\n", quantidade);
+  switch (opcao) {
+    case 1:
+      printf("================================================================================\n");
+      printf("                              ASTERISCOS SIMPLES\n");
+      printf("================================================================================\n");
+      break;
+    case 2:
+      printf("================================================================================\n");
+      printf("                        SIMBOLO DE SOMA COM ASTERISCOS\n");
+      printf("================================================================================\n");
+      break;
+    case 3:
+      printf("================================================================================\n");
+      printf("                           LETRA X COM ASTERISCOS\n");
+      printf("================================================================================\n");
+      break;
+    case 4:
+      printf("================================================================================\n");
+      printf("                                   ALEATÓRIOS\n");
+      printf("================================================================================\n");
+      break;
+    default:
+      printf("================================================================================\n");
+      printf("                                 PACMAN\n");
+      printf("================================================================================\n");
+      break;
+  }
+
 }

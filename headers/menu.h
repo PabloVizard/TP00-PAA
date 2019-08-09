@@ -4,6 +4,7 @@
 //Prototipos das funções
 
 void MenuPrincipal();
-void MenuEscolha1();
-void MenuEscolha2();
+void MenuEscolhaFigura();
+void MenuEscolhaQuantidade();
+void MenuQuadro(int opcao, int quantidade);
 #endif
