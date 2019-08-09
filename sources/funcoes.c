@@ -164,21 +164,6 @@ void ConfereQuantidadePacman(int *quantidade){
   else if (*quantidade > 17)
     *quantidade = 17;
 }
-void ConfereRepeticao(int repeticao, int *opcao, int *quantidade, int opcaoAux, int quantAux){
-  if ((repeticao == 1)){
-    opcao = &opcaoAux;
-    quantidade = &quantAux;
-  }
-}
-void Repeticao(int *repeticao){
-  printf("Deseja gera esse novo quadro novamente?\nSim = 1/Não = 2\nResposta: ");
-  scanf("%d", repeticao);
-  while((*repeticao <= 0) || (*repeticao >= 3)){
-    printf("\nNão entendi a sua resposta.\n\n");
-    printf("Deseja gera esse novo quadro novamente?\nS = 1/N = 2\nResposta: ");
-    scanf("%d", repeticao);
-  }
-}
 /*Função que percorre a matriz e imprime cada posição. */
 void ImprimirQuadro(char matriz[20][80]){
   for(int i = 0; i < 20; i++){

@@ -6,15 +6,16 @@
 #include "../headers/menu.h"
 
 int main(int argc, char const *argv[]) {
+
   //Variáveis utilizadas para funcionamento do programa
-  int quantidade = 0, opcao = 0, quantAux = 0, opcaoAux = 0;
-  int repeticao = 2; // inicio repeticao em 2 pois a primeira execução não é uma repeticao
+  int quantidade = 0, opcao = 0, quantAux = 0, opcaoAux = 0,finalizacao = 0;
+  int repeticao = 0; // inicio repeticao em 2 pois a primeira execução não é uma repeticao
   srand((unsigned)time(NULL)); //Função para sempre inserir um número aleatorio
   char matriz[20][80]; // Criação da matriz(quadro)
-  while(1){
+  while(!finalizacao){
     quantAux = quantidade;
     opcaoAux = opcao;
-    if(repeticao == 2){
+    if(repeticao == 0){
       /*Chamando as funções do menu e recebendo valores para as variáveis que seram
        utilizadas nas funções*/
       MenuPrincipal();
@@ -70,6 +71,9 @@ int main(int argc, char const *argv[]) {
     }
     //Verificação se o usuário deseja continuar o programa com as mesmas opções
     Repeticao(&repeticao);
+    //Verificação se o usuário quer que o programa continua executando
+    if(repeticao != 1)
+      FinalizacaoPrograma(&finalizacao); //Caso seja 1, continua, caso seja 0, encerra;
   }
 
   return 0;

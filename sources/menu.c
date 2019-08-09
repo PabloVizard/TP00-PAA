@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include "menu.h"
 
 //Funções dos menus
 void MenuPrincipal(){
@@ -48,5 +49,28 @@ void MenuQuadro(int opcao, int quantidade){
       printf("================================================================================\n");
       break;
   }
-
+}
+void ConfereRepeticao(int repeticao, int *opcao, int *quantidade, int opcaoAux, int quantAux){
+  if ((repeticao == 1)){
+    opcao = &opcaoAux;
+    quantidade = &quantAux;
+  }
+}
+void Repeticao(int *repeticao){
+  printf("Deseja gerar esse quadro novamente?\n\t1->Sim\n\t0->Nao\nResposta: ");
+  scanf("%d", repeticao);
+  while((*repeticao < 0) || (*repeticao >= 2)){
+    printf("\nNão entendi a sua resposta.\n\n");
+    printf("Deseja gerar esse quadro novamente?\n\t1->Sim\n\t0->Nao\nResposta: ");
+    scanf("%d", repeticao);
+  }
+}
+void FinalizacaoPrograma(int *finalizacao){
+  printf("\nDeseja encerrar o programa?\n\t1->Sim\n\t0->Nao\nResposta: ");
+  scanf("%d",finalizacao);
+  while((*finalizacao < 0) || (*finalizacao >= 2)){
+    printf("\nNão entendi a sua resposta.\n\n");
+    printf("\nDeseja encerrar o programa?\n\t1->Sim\n\t0->Nao\nResposta: ");
+    scanf("%d",finalizacao);
+  }
 }

@@ -11,7 +11,5 @@ void InserirAleatorio(char matriz[20][80], int quantidade);
 void InserirObraAluno(char matriz[20][80], int quantidade);
 void ConfereQuantidade(int *quantidade);
 void ConfereQuantidadePacman(int *quantidade);
-void ConfereRepeticao(int repeticao, int *opcao, int *quantidade, int opcaoAux, int quantAux);
-void Repeticao(int *repeticao);
 void ImprimirQuadro(char matriz[20][80]);
 #endif
