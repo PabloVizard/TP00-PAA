@@ -12,4 +12,6 @@ void InserirObraAluno(char matriz[20][80], int quantidade);
 void ConfereQuantidade(int *quantidade);
 void ConfereQuantidadePacman(int *quantidade);
 void ImprimirQuadro(char matriz[20][80]);
+
+
 #endif
