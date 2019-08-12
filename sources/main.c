@@ -9,7 +9,7 @@ int main(int argc, char const *argv[]) {
 
   //Variáveis utilizadas para funcionamento do programa
   int quantidade = 0, opcao = 0, quantAux = 0, opcaoAux = 0,finalizacao = 0;
-  int repeticao = 0; // inicio repeticao em 2 pois a primeira execução não é uma repeticao
+  int repeticao = 0; // inicio repeticao em 0 pois a primeira execução não é uma repeticao
   srand((unsigned)time(NULL)); //Função para sempre inserir um número aleatorio
   char matriz[20][80]; // Criação da matriz(quadro)
   while(!finalizacao){
@@ -73,7 +73,7 @@ int main(int argc, char const *argv[]) {
     Repeticao(&repeticao);
     //Verificação se o usuário quer que o programa continua executando
     if(repeticao != 1)
-      FinalizacaoPrograma(&finalizacao); //Caso seja 1, continua, caso seja 0, encerra;
+      FinalizacaoPrograma(&finalizacao); //Caso seja 0, continua, caso seja 1, encerra;
   }
 
   return 0;
