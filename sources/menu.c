@@ -59,18 +59,22 @@ void ConfereRepeticao(int repeticao, int *opcao, int *quantidade, int opcaoAux, 
 void Repeticao(int *repeticao){
   printf("Deseja gerar esse quadro novamente?\n\t1->Sim\n\t0->Nao\nResposta: ");
   scanf("%d", repeticao);
+  getchar();//Função para ignorar strings caso sejam digitadas sem querer, evitando assim um loop infinito.
   while((*repeticao < 0) || (*repeticao >= 2)){
     printf("\nNão entendi a sua resposta.\n\n");
     printf("Deseja gerar esse quadro novamente?\n\t1->Sim\n\t0->Nao\nResposta: ");
     scanf("%d", repeticao);
+    getchar();//Função para ignorar strings caso sejam digitadas sem querer, evitando assim um loop infinito.
   }
 }
 void FinalizacaoPrograma(int *finalizacao){
   printf("\nDeseja encerrar o programa?\n\t1->Sim\n\t0->Nao\nResposta: ");
   scanf("%d",finalizacao);
+  getchar();//Função para ignorar strings caso sejam digitadas sem querer, evitando assim um loop infinito.
   while((*finalizacao < 0) || (*finalizacao >= 2)){
     printf("\nNão entendi a sua resposta.\n\n");
     printf("\nDeseja encerrar o programa?\n\t1->Sim\n\t0->Nao\nResposta: ");
     scanf("%d",finalizacao);
+    getchar();//Função para ignorar strings caso sejam digitadas sem querer, evitando assim um loop infinito. 
   }
 }

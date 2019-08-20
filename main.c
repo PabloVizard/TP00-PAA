@@ -2,8 +2,8 @@
 #include <stdio.h>
 #include <time.h>
 #include <string.h>
-#include "../headers/funcoes.h"
-#include "../headers/menu.h"
+#include "./headers/funcoes.h"
+#include "./headers/menu.h"
 
 int main(int argc, char const *argv[]) {
 
@@ -21,10 +21,10 @@ int main(int argc, char const *argv[]) {
       MenuPrincipal();
       MenuEscolhaFigura();
       scanf("%d", &opcao);
-      getchar();//Função para ignorar strings caso sejam digitadas sem querer, evitando assim um loop infinito. */
+      getchar();//Função para ignorar strings caso sejam digitadas sem querer, evitando assim um loop infinito.
       MenuEscolhaQuantidade();
       scanf("%d", &quantidade);
-      getchar();//Função para ignorar strings caso sejam digitadas sem querer, evitando assim um loop infinito. */
+      getchar();//Função para ignorar strings caso sejam digitadas sem querer, evitando assim um loop infinito.
 
     }
     switch (opcao){//switch case para melhor organização do código
